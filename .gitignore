@@ -1,0 +1,18 @@
+# Unity folders to ignore
+Library/
+Temp/
+Logs/
+Build/
+UserSettings/
+
+# OS files
+*.log
+*.tmp
+*.user
+*.pid
+*.booproj
+*.svd
+*.pdb
+
+# Visual Studio
+.vs/
