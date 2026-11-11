@@ -16,3 +16,6 @@ UserSettings/
 
 # Visual Studio
 .vs/
+*.csproj
+*.sln
+UpgradeLog.htm
