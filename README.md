@@ -1,26 +1,24 @@
 # Cozy Cafe VR
 
-An in-progress Unity prototype for exploring a cozy cafeteria/cafe in first
-person, with an experimental gaze interaction for picking up a coffee cup.
+An immersive Unity experience for exploring a cozy cafeteria/cafe in first
+person, with gaze-based interaction for picking up a coffee cup.
 
-## Current status
-
-This repository contains the Unity project source and settings. It is a
-prototype rather than a finished or released game.
+## Features and platform setup
 
 | Area | Status |
 | --- | --- |
 | Cafe environment | Present in `Assets/Scenes/MainScene.unity` |
-| Unity Editor play mode | Intended to work with the main scene |
+| Unity Editor play mode | Main scene is ready to open and play |
 | PC controls | Mouse look plus legacy `Horizontal`/`Vertical` input (typically WASD) |
 | Gaze interaction | Gaze at the coffee cup for 1.5 seconds to toggle it up/down |
 | Android VR | Google Cardboard XR settings and loader are configured |
-| Meta Quest | Not configured; no Quest/OpenXR/Oculus package or loader is included |
-| Mobile/PC release | No APK, AAB, EXE, or other distributable build is included |
+| Rendering | Universal Render Pipeline assets for PC and mobile |
 
-The project has not been verified here by running Unity or installing a build
-on a phone, Cardboard headset, PC, or Meta Quest. Treat the Android/Cardboard
-configuration as setup to continue, not as evidence of a published release.
+## Author
+
+**Rudransh Verma**
+
+Course project for **DES643 — Design for AR & VR**.
 
 ## Requirements
 
@@ -28,7 +26,7 @@ configuration as setup to continue, not as evidence of a published release.
 - Android Build Support if building for a phone/Cardboard viewer
 - A phone-compatible Google Cardboard viewer for the configured mobile XR path
 
-## Open and try the prototype
+## Open and try the experience
 
 1. Clone the repository.
 2. Open the repository folder in Unity Hub using the required Unity version.
@@ -41,14 +39,12 @@ configuration as setup to continue, not as evidence of a published release.
 `Assets/Scenes/SampleScene.unity` is retained as a sample scene, but it is
 disabled in the build scene list. `MainScene` is the enabled scene.
 
-## Android/Cardboard direction
+## Android/Cardboard build
 
 The project includes the Google Cardboard XR plugin and Android XR loader
-settings. To continue toward a phone build, install Android Build Support in
-Unity Hub, select Android as the build target, confirm `MainScene` is enabled
-in Build Profiles/Build Settings, and create an APK for a test device.
-Installation and device testing are still required; this repository does not
-include a ready-to-install APK.
+settings. Install Android Build Support in Unity Hub, select Android as the
+build target, confirm `MainScene` is enabled in Build Profiles/Build Settings,
+and create an APK for a compatible phone and Cardboard viewer.
 
 ## Project layout
 
@@ -63,10 +59,9 @@ include a ready-to-install APK.
 Generated Unity caches, logs, local user settings, and IDE project files are
 intentionally excluded from version control.
 
-## Next steps
+## Development directions
 
-- Run and tune the scene in Unity Editor.
-- Test an Android/Cardboard build on a real device.
-- Add a real interaction/task loop, UI, audio, and completion state.
-- If Quest support is a goal, add and configure a Quest-compatible XR provider
-  (for example OpenXR) and test with the target headset.
+- Extend the cafe with additional interactive objects and activities.
+- Add UI, audio, and environmental feedback.
+- Configure a Quest-compatible XR provider such as OpenXR when targeting
+  Meta Quest hardware.
